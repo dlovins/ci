@@ -8,8 +8,15 @@
 </head>
 <body>
 	<div id="container">
-	<p>	My view has been loaded</p>	
-	<p><?php echo $myValue; ?></p>		
+		<p>	My view has been loaded</p>		
+		
+<!--		<pre>
+			<?php print_r($records); ?>
+			</pre>
+-->		
+		<?php foreach($records as $row) : ?>
+			<h4><?php echo $row->title; ?></h4>
+		<?php endforeach; ?>
 	</div>
 </body>
 	
